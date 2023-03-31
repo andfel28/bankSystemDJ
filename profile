@@ -1,0 +1,1 @@
+web: gunicorn bankSystemDJ.wsgi --log-file -
