@@ -37,7 +37,7 @@ python manage.py runserver
 
 # save_new_user = AllUsers(first_name=fname, last_name=lname, username=username, email=email)
 # save_new_user.save()
-
+https://banksystemdj-production.up.railway.app/bankHome/
 
 STATIC_URL =        'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
