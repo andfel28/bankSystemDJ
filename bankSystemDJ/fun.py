@@ -35,7 +35,8 @@ cd pycharmProjects/bankSystemDJ
 conda activate banksystem
 python manage.py runserver
 
-
+# save_new_user = AllUsers(first_name=fname, last_name=lname, username=username, email=email)
+# save_new_user.save()
 
 
 STATIC_URL =        'static/'
