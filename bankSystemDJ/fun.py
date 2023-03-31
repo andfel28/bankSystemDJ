@@ -43,6 +43,11 @@ STATIC_URL =        'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 
+Puerto postgres
+5432
+
+
+
 
 Training with with with with with with with training with human feedback
 Training with human human human human human
