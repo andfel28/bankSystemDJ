@@ -1,18 +1,18 @@
-asgiref @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_cchykh5sgr/croots/recipe/asgiref_1661287542702/work
-certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
-click @ file:///C:/ci/click_1646056762388/work
-colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
-cx-Oracle @ file:///C:/ci_310/cx_oracle_1642079520013/work
-Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
+asgiref==3.5.2
+certifi==2022.12.7
+click== 8.0.4
+colorama==0.4.6
+cx-Oracle==8.3.0
+Django ==4.1
 django-shortcuts==1.6
-Flask @ file:///C:/b/abs_ef16l83sif/croot/flask_1671217367534/work
+Flask ==2.2.2
 Flask-WTF==1.1.1
 gunicorn==20.1.0
-itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
-Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
-MarkupSafe @ file:///C:/ci/markupsafe_1654508036328/work
-sqlparse @ file:///C:/b/abs_83jn6owfpc/croot/sqlparse_1668793499314/work
-tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
-Werkzeug @ file:///C:/b/abs_17q5kgb8bo/croot/werkzeug_1671216014857/work
+itsdangerous ==2.0.1
+Jinja2== 3.1.2
+MarkupSafe==2.1.1
+sqlparse==0.4.3
+tzdata == 2022g
+Werkzeug == 2.2.2
 wincertstore==0.2
 WTForms==3.0.1
