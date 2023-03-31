@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-y5rg313c9q$(t^(4wemz_$9w6hai)=fj7hl$4s+=ap847y$$*0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['banksystemdj-production.up.railway.app']
+ALLOWED_HOSTS = ['banksystemdj-production.up.railway.app','*']
 
 
 # Application definition

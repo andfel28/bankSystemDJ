@@ -2,6 +2,8 @@ from django.shortcuts import render
 from bankSystemDJ.cuenta          import Cuenta
 
 
+
+
 def home(request):
     v_idOwner = 2020  # Francisco
     return render(request,'home.html',{'idOwner':v_idOwner})
