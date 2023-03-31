@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls    import path
 from bankSystemDJ.views import home, transferencia
 
 
@@ -24,7 +24,5 @@ urlpatterns = [
     path("bankHome/", home),
     path("bankOutDoorLoser/", home),
     path("/transferencia/<int:p_idOwner>", transferencia),
-
-
 
 ]
