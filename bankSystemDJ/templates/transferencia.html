@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block content %}
+  <section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2><br>Transferencias</h2>
+        </div>
+
+        <div class="form">
+            <form  method="post"  action="{{url_for('transferencia',p_idOwner=idOwner)}}" >
+                <input type="hidden" name="csrf_token" value="2727339237737272929329323" />
+              <div class="row">
+                  <div class="col-md-6 form-group">
+                             <label> Cliente: {{nameOwner}} </label>
+                  </div>
+                  <div class="row">
+                       <div class="col-md-6 form-group">
+                             <label> Cuenta: {{idCuenta}} </label>
+                       </div>
+                  </div>
+
+                  <div class="alert alert-primary" role="alert">
+                     Balance Actual:$ {{balance}}
+                  </div>
+
+                  <div class="alert alert-secondary" role="alert">
+                        Monto Máximo: 15 millones de pesos por día, en todos los canales del banco
+                  </div>
+
+                  <div class="form-group mt-3">
+                  </div>
+
+                  <div class="row">
+                        <div class="form-group">
+                            <!--input type="text" name="name" class="form-control" id="in_cuen" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars"-->
+                            <label class="control-label col-sm-4 col-md-3 col-lg-2"> Cuenta Destino </label>
+                            <select class="js-example-basic-multiple col-sm-4 col-md-2 col-lg-4" name="enti" id="enti">
+
+                                  {% for inscrita in inscritas %}
+                                         <option value="{{ inscrita[0] }}"> {{ inscrita[0] }} </option>
+                                  {% endfor %}
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group row">
+
+                        </div>
+
+                        <div class="form-group mt-3">
+                                  <label class="control-label col-sm-4 col-md-2 col-lg-2"> Valor </label>
+                                  <input type="number" name="valorTran" required class="col-sm-4 col-md-2 col-lg-3"   id="valorTranID" min="1" pattern="^[0-9]+" placeholder="" data-rule="" data-msg="">
+                        </div>
+
+
+                        <div class="form-group mt-3">
+                                <label class="control-label col-sm-4 col-md-2 col-lg-2"> Detalle </label>
+                                <textarea class="form-control" name="message" rows="5" placeholder="" ></textarea>
+                        </div>
+
+
+
+                     <div class="text-center">
+                               <button type="submit" class="btn btn-primary">Continuar</button>
+                     </div>
+                  </div>
+              </div>
+          </form>
+
+       </div>
+    </div>
+    </section><!-- End Contact Section -->
+
+{% endblock %}

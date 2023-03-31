@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mensaje</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container" >
+    <div class="btn-group col-sm-1 col-md-2 col-lg-2">                </div>
+
+            <center>
+                <figure>
+                  <img src="{{ url_for('static',  filename ='assets/img/apple-touch-icon.png') }}" alt="Trulli" style="width:10%">
+                </figure>
+
+                <div class="alert alert-info">
+                <h2>Transacción Realizada con exito</h2>
+                </div>
+
+            </center>
+             <form method="get" action="{{url_for('home')}}" class="form-horizontal container-fluid"  id="homeForm">
+                <input type="hidden" name="csrf_token" value="232323232323" />
+                <fieldset>
+                    <div class="form-field">
+                        <input type="submit" class="btn-info btn-block col-xs-12 col-sm-12 col-md-12 btn-sm" value="Continuar">
+                    </div>
+                </fieldset>
+             </form>
+
+
+
+
+</div>
+</div>
+
+</body>
+</html>
